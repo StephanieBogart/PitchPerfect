@@ -30,6 +30,7 @@ class PlaySoundsViewController: UIViewController {
 
     // MARK: Actions
     @IBAction func playSoundForButton(_ sender: UIButton) {
+        // Take the tag # associated with each button to switch and make the desired modification
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
             playSound(rate: 0.5)
